@@ -1,6 +1,5 @@
 // Ferma's Little Theorem: If 'n' is a prime number and 'a' is any positive integer less then 'n',
 // then 'a' raised to the n-th power is congruent to 'a' modulo n.
-// a^(n-1) = n
 // Two numbers are said to be congruent modulo n if they both have the same remainder when divided by n.
 // The remainder of 'a/n' is also referred as the remainder of a modulo n, or as 'a modulo n'.
 
@@ -45,4 +44,5 @@ function fast_is_prime(n, times) {
 console.log("Is 7 prime?", fast_is_prime(7, 5)); 
 console.log("Is 15 prime?", fast_is_prime(15, 5));
 console.log("Is 561 prime?", fast_is_prime(561, 5));
+console.log("Is 17 prime?", fast_is_prime(17, 5))
 
