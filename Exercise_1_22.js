@@ -1,19 +1,14 @@
 // Exercise 1_22. Timed prime
-function timed_prime_test(n){
-    display(n);
+function timed_prime_test(n) {
     return start_prime_test(n, get_time());
 }
 
-function start_prime_test(n, start_time){
-    return is_prime(n)
-    ? report_prime(get_time() - start_time)
-    : true;
-}
-
 function start_prime_test(n, start_time) {
-    return is_prime(n)
-        ? report_prime(get_time() - start_time)
-        : false;
+    if (is_prime(n)) {
+        display(n);  // Only display primes
+        return report_prime(get_time() - start_time);
+    }
+    return false;
 }
 
 function report_prime(elapsed_time){
